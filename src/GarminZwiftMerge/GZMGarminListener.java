@@ -85,6 +85,8 @@ public class GZMGarminListener implements MesgListener, MesgDefinitionListener {
      * Merges Zwift location data with Garmin data.
      * 
      * Reads known input and writes new output.
+     * 
+     * @param  mesg Fit record message
      */
     @Override
     public void onMesg(Mesg mesg) { 
@@ -231,6 +233,8 @@ public class GZMGarminListener implements MesgListener, MesgDefinitionListener {
 
     /**
      * Copies known Fit message definitions to new file.
+     * 
+     * @param mesg Fit record definition message
      */
     @Override
     public void onMesgDefinition(MesgDefinition mesg) {

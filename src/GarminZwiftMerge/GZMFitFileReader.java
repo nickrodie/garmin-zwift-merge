@@ -62,7 +62,7 @@ public class GZMFitFileReader {
             Decode decode = new Decode(); 
             // verify Fit file integrity
             if(!decode.checkFileIntegrity((InputStream) stream))
-                throw new GZMRuntimeException(GarminZwiftMerge.ERR_MSG_FIT_FILE_INTEGRITY);
+                throw new GZMRuntimeException(GarminZwiftMerge.ERR_MSG_FIT_FILE_INTEGRITY + path);
 
             // reset stream
             channel.position(0);
@@ -71,9 +71,6 @@ public class GZMFitFileReader {
             // read with listener
             decode.addListener(_listener);
             decode.read(stream);
-        }
-        catch (GZMRuntimeException e) {            
-            throw new GZMRuntimeException(e.getMessage() + path);
         }
         catch (FileNotFoundException e) {
             throw new GZMRuntimeException(GarminZwiftMerge.ERR_MSG_FILE_NOT_FOUND + path);

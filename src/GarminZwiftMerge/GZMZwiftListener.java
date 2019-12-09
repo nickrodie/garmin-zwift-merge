@@ -73,6 +73,8 @@ public class GZMZwiftListener implements MesgListener {
      * Reads Zwift data.
      * 
      * Reads and stores selected Zwift fields.
+     *
+     * @param mesg Fit record message
      */
     @Override
     public void onMesg(Mesg mesg) { 

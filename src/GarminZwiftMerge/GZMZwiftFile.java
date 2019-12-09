@@ -33,8 +33,8 @@ import java.util.HashMap;
 public class GZMZwiftFile {
     
     private Integer _manufacturer, _sessionFinished, _timeCreated;
-    private String _path;
-    private HashMap<Integer, HashMap<Integer, Double>> _records;
+    private final String _path;
+    private final HashMap<Integer, HashMap<Integer, Double>> _records;
     
     public GZMZwiftFile(String path) {
         _path = path;
