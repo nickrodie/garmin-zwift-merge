@@ -1,0 +1,1 @@
+start .\dist\javadoc\index.html
