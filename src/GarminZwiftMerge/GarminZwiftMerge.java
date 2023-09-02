@@ -74,7 +74,7 @@ public class GarminZwiftMerge {
     public static final String USAGE_MESSAGE = String.format("\nMerges Zwift file/s location into a Garmin file.\n\n"
             + "garmin-zwift-merge.jar %8$s %2$s %9$s %3$s [%5$s %4$s] [%6$s]\n\n"
             + " %8$s %2$-17s The Garmin Fit file. Requires 1 only Garmin file.\n\n"
-            + " %8$s %3$-17s The Zwift Fit file/s. Requires 1 or more Zwift files.\n"
+            + " %9$s %3$-17s The Zwift Fit file/s. Requires 1 or more Zwift files.\n"
             + " %1$-20s The order of the files is not important. They will be sorted.\n\n"
             + " %5$s %4$-17s Specify the output file name.\n"
             + " %1$-20s Defaults to the name of the first Zwift file with .merged.fit\n\n"
